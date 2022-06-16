@@ -17,6 +17,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all, 300ms;
+  }
+  .current {
+    border: 1px solid #0c508f;
+    &:after {
+      content: '|';
+      animation: blick 1000ms infinite;
+    }
+  }
+  .before-current {
+    border: 1px solid #0c508f;
   }
   .devider {
     height: 65px;
@@ -28,5 +39,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .captcha-input-entity {
+    display: block;
+    position: fixed;
+    top: -1000px;
+    left: 0;
+  }
+}
+
+@keyframes blick {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
