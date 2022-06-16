@@ -1,10 +1,13 @@
-import { View, Input } from '@tarojs/components'
+import { View, Input, Image } from '@tarojs/components'
 import React from 'react'
+import LoadingImage from './images/loading-icon.svg'
 import './CaptchaInput.less'
 
 const CaptchaInput = ({
   format,
   // value,
+  theme,
+  status,
   onFinish
 }) => {
   const render = []
@@ -13,6 +16,8 @@ const CaptchaInput = ({
   let maxLength = 0
   const [val, setVal] = React.useState(null)
   const [inputFocused, setInputFocused] = React.useState(false)
+  const nextStatus = status || 'pending'
+  const nextTheme = theme || 'light'
   formatArr.map((char, i) => {
     if (char === '*') {
       render.push({
@@ -64,7 +69,11 @@ const CaptchaInput = ({
   }
 
   return (
-    <View className="captcha-input" onClick={ handleFocus }>
+    <View className={[
+      'captcha-input',
+      nextTheme === 'dark' ? 'captcha-input-dark' : '',
+      `captcha-input-${nextStatus}`
+    ]} onClick={ handleFocus }>
       {
         render.map((e) => {
           return e.type === 'block' ?
