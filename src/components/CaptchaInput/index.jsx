@@ -29,6 +29,7 @@ export default class CaptchaInput extends React.Component {
 
   handleFocus = () => {
     this.refs.captchaInputEntity.focus()
+    console.log(this.refs.captchaInputEntity)
   }
 
   onInputEntityChange = (event) => {
