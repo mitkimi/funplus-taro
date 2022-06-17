@@ -1,36 +1,20 @@
 import { View } from '@tarojs/components'
 import React from 'react'
 import CaptchaInput from '../../components/CaptchaInput'
-import './index.less'
 
 export default class Index extends React.Component {
   state = {
-    loading: false,
-    status: 'pending'
+    captcha: ''
   }
-  onFinish = () => {
-    console.log('finish')
+  handleCaptchaFinish = (val) => {
     this.setState({
-      status: 'success'
+      captcha: val
     })
   }
-
-  handleTest = () => {
-    this.setState({
-      loading: true
-    })
-
-    setTimeout(() => {
-      this.setState({
-        loading: false
-      })
-    }, 3000)
-  }
-  render() {
+  render () {
     return (
       <View>
-        <CaptchaInput format="***-***" status={ this.state.status } onFinish={this.onFinish} />
-        <View onClick={this.handleTest}>asdf</View>
+        <CaptchaInput format="****" onFinish={this.handleCaptchaFinish} />
       </View>
     )
   }
