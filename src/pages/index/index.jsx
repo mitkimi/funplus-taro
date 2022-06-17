@@ -1,47 +1,52 @@
 import { Image, View } from '@tarojs/components'
 import React from 'react'
-import Dialog from '../../components/Dialog'
+import Cell from '../../components/Cell'
+import SuccessIcon from '../../components/Toast/images/success-icon.png'
 
 export default class Index extends React.Component {
-  state = {
-    open: false
-  }
-
-  handleCloseDialog = () => {
-    this.setState({
-      open: false
-    })
-  }
-
-  componentDidMount = () => {
-    setTimeout(() => {
-        this.setState({
-        open: true
-      })
-    }, 1000)
-  }
 
   render() {
-    const header = {
-      icon: <Image src="../../components/Toast/images/success-icon.png" />,
-      title: '短信验证码'
-    }
-    const footer = {
-      cancelBtn: '取消',
-      submitBtn: '同意',
-      onCancel: (...args) => {
-        console.log('cancel', ...args)
+    const options = [
+      {
+        title: '用户名',
+        message: 'mitkimi'
       },
-      onSubmit: (...args) => {
-        console.log('submit', ...args)
+      {
+        title: '手机号',
+        isLink: true,
+        linkType: 'navigateTo',
+        to: '/pages/index/index',
+        message: '156 **** 5231'
+      },
+      {
+        title: '邮箱',
+        isLink: true,
+        linkType: 'navigateTo',
+        to: '/pages/index/index',
+        message: '去绑定'
+      },
+      {
+        title: '隐私政策',
+        isLink: true,
+        linkType: 'navigateTo',
+        to: '/pages/index/index'
       }
-    }
+    ]
+
+    const options2 = [
+          {
+            icon: <Image src={SuccessIcon} />,
+            title: '客服',
+            isLink: true,
+            linkType: 'navigateTo',
+            message: '400-800-1234',
+            to: '/pages/index/index'
+          }
+        ]
     return (
       <View>
-        <Dialog open={this.state.open} header={header} footer={footer} onClose={this.handleCloseDialog}
-        closeable>
-          <View>中间的部分</View>
-        </Dialog>
+        <Cell options={options} />
+        <Cell options={options2} />
       </View>
     )
   }
