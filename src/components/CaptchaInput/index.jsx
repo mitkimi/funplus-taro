@@ -4,7 +4,7 @@ import './CaptchaInput.less'
 
 const CaptchaInput = ({
   format,
-  // value,
+  autofocus,
   theme,
   status,
   onFinish
@@ -17,6 +17,7 @@ const CaptchaInput = ({
   const [inputFocused, setInputFocused] = React.useState(false)
   const nextStatus = status || 'pending'
   const nextTheme = theme || 'light'
+  autofocus && console.log('useEffect')
   formatArr.map((char, i) => {
     if (char === '*') {
       render.push({
