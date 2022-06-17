@@ -1,0 +1,199 @@
+.button {
+  width: 175px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0 5px;
+  transition: all, 300ms;
+  overflow: hidden;
+  .loading-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// 颜色类
+.button-type-default {
+  border: 1px solid #4c9eea;
+  color: #4c9eea;
+  &:active {
+    border: 1px solid #1B80DD;
+    color: #1B80DD;
+  }
+  &.button-disabled {
+    background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    color: #E7E7E7;
+  }
+  &.button-loading {
+    border: 1px solid #6fb1ef;
+    color: #6fb1ef;
+  }
+  &.button-danger {
+    border: 1px solid #C11717;
+    color: #C11717;
+    &:active {
+      border: 1px solid #C11717;
+      color: #C11717;
+    }
+  }
+}
+.button-type-secondary {
+  border: 1px solid #b2b2b2;
+  color: #393939;
+  &:active {
+    border: 1px solid #1B80DD;
+    color: #1B80DD;
+  }
+  &.button-disabled {
+    background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    color: #E7E7E7;
+  }
+  &.button-loading {
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+  }
+  &.button-danger {
+    border: 1px solid #C11717;
+    color: #C11717;
+    &:active {
+      border: 1px solid #C11717;
+      color: #C11717;
+    }
+  }
+}
+.button-type-primary {
+  border: 1px solid #4c9eea;
+  background: #4c9eea;
+  color: #ffffff;
+  &:active {
+    border: 1px solid #1B80DD;
+    background: #1B80DD;
+  }
+  &.button-disabled {
+    background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    color: #E7E7E7;
+  }
+  &.button-loading {
+    background: #6fb1ef;
+    border: 1px solid #6fb1ef;
+    color: #E7E7E7;
+  }
+  &.button-danger {
+    border: 1px solid #C11717;
+    background: #C11717;
+    &:active {
+      border: 1px solid #C11717;
+      background: #C11717;
+    }
+  }
+}
+.button-type-dark {
+  border: 1px solid #0C508F;
+  background: #0C508F;
+  color: #ffffff;
+  &:active {
+    border: 1px solid #1B80DD;
+    background: #1B80DD;
+  }
+  &.button-disabled {
+    background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    color: #E7E7E7;
+  }
+  &.button-loading {
+    background: rgb(124, 183, 238);
+    border: 1px solid rgb(124, 183, 238);
+    color: #E7E7E7;
+  }
+  &.button-danger {
+    border: 1px solid #C11717;
+    background: #C11717;
+    &:active {
+      border: 1px solid #C11717;
+      background: #C11717;
+    }
+  }
+}
+.button-type-dashed {
+  border: 1px dashed #4c9eea;
+  color: #4c9eea;
+  &:active {
+    border: 1px dashed #1B80DD;
+    color: #1B80DD;
+  }
+  &.button-disabled {
+    background: #f9f9f9;
+    border: 1px dashed #d3d3d3;
+    color: #E7E7E7;
+  }
+  &.button-loading {
+    border: 1px dashed #6fb1ef;
+    color: #6fb1ef;
+  }
+  &.button-danger {
+    border: 1px dashed #C11717;
+    color: #C11717;
+    &:active {
+      border: 1px dashed #C11717;
+      color: #C11717;
+    }
+  }
+}
+
+.button-type-text {
+  color: #393939;
+  &:active {
+    color: #1B80DD;
+  }
+  &.button-disabled {
+    color: #E7E7E7;
+  }
+  &.button-danger {
+    color: #C11717;
+  }
+}
+.button-type-link {
+  color: #4c9eea;
+  height: unset;
+  width: unset;
+  &:active {
+    color: #1B80DD;
+  }
+  &.button-disabled {
+    color: #E7E7E7;
+  }
+  &.button-danger {
+    color: #C11717;
+  }
+}
+
+// 尺寸类
+// .button-size-standard {}
+.button-size-small {
+  height: 30px;
+  border-radius: 15px;
+  width: unset;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+// 沾满整行
+.button-fluid {
+  width: 100%;
+}
