@@ -1,6 +1,5 @@
-import { View, Input, Image } from '@tarojs/components'
+import { Input, View } from '@tarojs/components'
 import React from 'react'
-import LoadingImage from './images/loading-icon.svg'
 import './CaptchaInput.less'
 
 const CaptchaInput = ({

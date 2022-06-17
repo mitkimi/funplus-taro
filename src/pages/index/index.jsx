@@ -5,10 +5,14 @@ import './index.less'
 
 export default class Index extends React.Component {
   state = {
-    loading: false
+    loading: false,
+    status: 'pending'
   }
   onFinish = () => {
     console.log('finish')
+    this.setState({
+      status: 'success'
+    })
   }
 
   handleTest = () => {
@@ -25,7 +29,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <View>
-        <CaptchaInput format="***-***" theme="dark" onFinish={this.onFinish} />
+        <CaptchaInput format="***-***" status={ this.state.status } onFinish={this.onFinish} />
         <View onClick={this.handleTest}>asdf</View>
       </View>
     )
