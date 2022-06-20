@@ -1,10 +1,10 @@
 import { View } from '@tarojs/components'
 import React from 'react'
 
-export default class Index extends React.Component {
+export default class IconPage extends React.Component {
   render() {
     return (
-      <View>ICON PAGE</View>
+      <View>正在开发</View>
     )
   }
 }
