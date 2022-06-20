@@ -6,10 +6,10 @@ const ItemGroup = (props) => {
     title,
     items
   } = props
-  const EmptyArray = new Array((4 - items.length % 4)).fill('')
+  const EmptyArray = new Array((items.length === 4 ? 0 : 4 - items.length % 4)).fill('')
   return (
     <View className="item-group">
-      <View className="item-group-title">{title}{ EmptyArray }</View>
+      <View className="item-group-title">{title}</View>
       <View className="item-group-items">
         {
           items.map(e => {

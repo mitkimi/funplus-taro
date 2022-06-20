@@ -19,6 +19,9 @@ export default class HomePage extends React.Component {
           },
           {
             name: '按钮'
+          },
+          {
+            name: '唯一按钮'
           }
         ]
       },
@@ -68,6 +71,23 @@ export default class HomePage extends React.Component {
           },
           {
             name: '开关'
+          }
+        ]
+      },
+      {
+        groupName: '反馈 Feedback',
+        items: [
+          {
+            name: '信息'
+          },
+          {
+            name: '吐司'
+          },
+          {
+            name: '对话框'
+          },
+          {
+            name: '抽屉'
           }
         ]
       }
