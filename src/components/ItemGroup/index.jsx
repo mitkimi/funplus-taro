@@ -17,7 +17,7 @@ const ItemGroup = (props) => {
             <View className="icon">
               icon
             </View>
-            <View className="text">名称</View>
+              <View className="text">{ e.name }</View>
           </View>
           })
         }
