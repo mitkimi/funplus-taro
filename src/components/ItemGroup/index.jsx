@@ -1,4 +1,4 @@
-import { View } from '@tarojs/components'
+import { Image, View } from '@tarojs/components'
 import './ItemGroup.less'
 
 const ItemGroup = (props) => {
@@ -14,9 +14,7 @@ const ItemGroup = (props) => {
         {
           items.map(e => {
             return <View className="item">
-            <View className="icon">
-              icon
-            </View>
+              {e.icon ? <Image className="icon" src={e.icon} /> : 'icon'}
               <View className="text">{ e.name }</View>
           </View>
           })

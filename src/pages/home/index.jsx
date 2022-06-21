@@ -12,15 +12,19 @@ export default class HomePage extends React.Component {
         groupName: '基础组件 Basic',
         items: [
           {
+            icon: require(`../../assets/component-icons/Layout.png`),
             name: '布局'
           },
           {
+            icon: require(`../../assets/component-icons/Container.png`),
             name: '栅格'
           },
           {
+            icon: require(`../../assets/component-icons/Button.png`),
             name: '按钮'
           },
           {
+            icon: require(`../../assets/component-icons/BigCircleButton.png`),
             name: '唯一按钮'
           }
         ]
@@ -29,12 +33,15 @@ export default class HomePage extends React.Component {
         groupName: '导航 Navigator',
         items: [
           {
+            icon: require(`../../assets/component-icons/BreadCrumb.png`),
             name: '面包屑'
           },
           {
+            icon: require(`../../assets/component-icons/Stepper.png`),
             name: '步骤条'
           },
           {
+            icon: require(`../../assets/component-icons/ToTop.png`),
             name: '回到顶部'
           }
         ]
@@ -43,33 +50,43 @@ export default class HomePage extends React.Component {
         groupName: '表单 Form',
         items: [
           {
+            icon: require(`../../assets/component-icons/Form.png`),
             name: '表单'
           },
           {
+            icon: require(`../../assets/component-icons/Input.png`),
             name: '输入框'
           },
           {
+            icon: require(`../../assets/component-icons/TextArea.png`),
             name: '文本区域'
           },
           {
+            icon: require(`../../assets/component-icons/NumberInput.png`),
             name: '数字输入器'
           },
           {
+            icon: require(`../../assets/component-icons/CaptchaInput.png`),
             name: '验证码输入器'
           },
           {
+            icon: require(`../../assets/component-icons/Radio.png`),
             name: '单选按钮'
           },
           {
+            icon: require(`../../assets/component-icons/CheckBox.png`),
             name: '多选按钮'
           },
           {
+            icon: require(`../../assets/component-icons/Selector.png`),
             name: '选择器'
           },
           {
+            icon: require(`../../assets/component-icons/Cascader.png`),
             name: '级联选择器'
           },
           {
+            icon: require(`../../assets/component-icons/Switch.png`),
             name: '开关'
           }
         ]
@@ -78,15 +95,19 @@ export default class HomePage extends React.Component {
         groupName: '反馈 Feedback',
         items: [
           {
+            icon: require(`../../assets/component-icons/Message.png`),
             name: '信息'
           },
           {
+            icon: require(`../../assets/component-icons/Toast.png`),
             name: '吐司'
           },
           {
+            icon: require(`../../assets/component-icons/Dialog.png`),
             name: '对话框'
           },
           {
+            icon: require(`../../assets/component-icons/Drawer.png`),
             name: '抽屉'
           }
         ]
