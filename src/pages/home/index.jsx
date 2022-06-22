@@ -13,18 +13,22 @@ export default class HomePage extends React.Component {
         items: [
           {
             icon: require(`../../assets/component-icons/Layout.png`),
+            componentName: 'Layout',
             name: '布局'
           },
           {
             icon: require(`../../assets/component-icons/Container.png`),
+            componentName: 'Container',
             name: '栅格'
           },
           {
             icon: require(`../../assets/component-icons/Button.png`),
+            componentName: 'Button',
             name: '按钮'
           },
           {
             icon: require(`../../assets/component-icons/BigCircleButton.png`),
+            componentName: 'BigCircleButton',
             name: '唯一按钮'
           }
         ]
@@ -100,6 +104,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Toast.png`),
+            componentName: 'Toast',
             name: '吐司'
           },
           {

@@ -1,7 +1,10 @@
 export default defineAppConfig({
   pages: [
     'pages/home/index',
-    'pages/icon/index'
+    'pages/icon/index',
+    // component demo page
+    'pages/component-demos/Button/index',
+    'pages/component-demos/Toast/index'
   ],
   window: {
     backgroundTextStyle: 'light',
