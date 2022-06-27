@@ -6,6 +6,8 @@ export default defineAppConfig({
     'pages/component-demos/Button/index',
     'pages/component-demos/BigCircleButton/index',
     'pages/component-demos/CaptchaInput/index',
+    'pages/component-demos/Cell/index',
+    'pages/component-demos/Dialog/index',
     'pages/component-demos/Toast/index'
   ],
   window: {

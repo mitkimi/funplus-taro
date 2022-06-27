@@ -22,6 +22,11 @@ export default class HomePage extends React.Component {
             name: '栅格'
           },
           {
+            icon: require(`../../assets/component-icons/Cell.png`),
+            componentName: 'Cell',
+            name: '单元格'
+          },
+          {
             icon: require(`../../assets/component-icons/Button.png`),
             componentName: 'Button',
             name: '按钮'
@@ -110,6 +115,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Dialog.png`),
+            componentName: 'Dialog',
             name: '对话框'
           },
           {
