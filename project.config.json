@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "funplus-taro",
   "description": "A component lib of taro react",
-  "appid": "wx4514dcc54a594252",
+  "appid": "wx23532ffebd20e997",
   "setting": {
     "urlCheck": true,
     "es6": false,

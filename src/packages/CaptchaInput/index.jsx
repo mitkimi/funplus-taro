@@ -1,5 +1,5 @@
 import { Input, View } from '@tarojs/components'
-import React from 'react'
+import React, { useEffect } from 'react'
 import './CaptchaInput.less'
 
 const CaptchaInput = ({
@@ -17,7 +17,7 @@ const CaptchaInput = ({
   const [inputFocused, setInputFocused] = React.useState(false)
   const nextStatus = status || 'pending'
   const nextTheme = theme || 'light'
-  autofocus && console.log('useEffect')
+
   formatArr.map((char, i) => {
     if (char === '*') {
       render.push({
@@ -34,6 +34,10 @@ const CaptchaInput = ({
       })
     }
   })
+
+  useEffect(() => {
+    autofocus && inputRef.current.focus()
+  }, [])
 
   const handleFocus = () => {
     inputRef.current.focus()
