@@ -71,6 +71,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/CaptchaInput.png`),
+            componentName: 'CaptchaInput',
             name: '验证码输入器'
           },
           {

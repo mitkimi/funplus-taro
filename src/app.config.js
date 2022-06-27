@@ -4,6 +4,8 @@ export default defineAppConfig({
     'pages/icon/index',
     // component demo page
     'pages/component-demos/Button/index',
+    'pages/component-demos/BigCircleButton/index',
+    'pages/component-demos/CaptchaInput/index',
     'pages/component-demos/Toast/index'
   ],
   window: {
