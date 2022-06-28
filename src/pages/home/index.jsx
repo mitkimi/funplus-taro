@@ -64,10 +64,12 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Input.png`),
+            componentName: 'Input',
             name: '输入框'
           },
           {
             icon: require(`../../assets/component-icons/TextArea.png`),
+            componentName: 'TextArea',
             name: '文本区域'
           },
           {
