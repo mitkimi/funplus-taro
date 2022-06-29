@@ -1,0 +1,61 @@
+.radio-group-container {
+  .radio-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    .radio {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      .check-icon {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #1BBA48;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all, 300ms;
+    }
+    .radio-checked {
+      border: 1px solid #1BBA48;
+      background: #F3F3F3;
+      &.radio-disabled {
+        border: 1px solid #D3D3D3;
+        background: #F3F3F3;
+        .check-icon {
+          background: #D3D3D3;
+        }
+      }
+    }
+    .radio-unchecked {
+      background: #F3F3F3;
+      border: 1px solid #d1d1d1;
+      &.radio-disabled {
+        background: #D3D3D3;
+      }
+    }
+    .radio-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .radio-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .slot {
+      width: calc(100% - 35px);
+      line-height: 25px;
+    }
+  }
+  .radio-reverse {
+    flex-direction: row-reverse;
+  }
+}

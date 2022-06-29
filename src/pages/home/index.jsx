@@ -83,10 +83,12 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Radio.png`),
+            componentName: 'Radio',
             name: '单选按钮'
           },
           {
             icon: require(`../../assets/component-icons/CheckBox.png`),
+            componentName: 'CheckBox',
             name: '多选按钮'
           },
           {
@@ -99,6 +101,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Switch.png`),
+            componentName: 'Switch',
             name: '开关'
           }
         ]

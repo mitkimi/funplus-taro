@@ -8,6 +8,9 @@ export default defineAppConfig({
     'pages/component-demos/CaptchaInput/index',
     'pages/component-demos/Cell/index',
     'pages/component-demos/Dialog/index',
+    'pages/component-demos/Switch/index',
+    'pages/component-demos/Radio/index',
+    'pages/component-demos/CheckBox/index',
     'pages/component-demos/Input/index',
     'pages/component-demos/Toast/index'
   ],
