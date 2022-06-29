@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   .input-core {
     margin: 0 10px 0 20px;
     height: 40px;
@@ -16,6 +17,24 @@
     color: #393939;
     font-size: 14px;
     width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  .hot-click-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .hot-click-field {
+      // background: #cf0;
+      color: transparent;
+      margin-right: 1px;
+      z-index: 1;
+    }
   }
   .right-side-buttons {
     margin-right: 10px;
@@ -31,6 +50,14 @@
         margin-left: 0;
       }
     }
+  }
+  .suffix {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
   }
 }
 
