@@ -10,8 +10,8 @@ const Radio = ({ value, align, options, onChange }) => {
   
   return <View className="radio-group-container">
     {options.map(op => {
-      return <View className={['radio-item-container', op.reverse ? 'radio-reverse': '', `radio-${realAlign}`]}>
-        <View className={['radio', value === op.val ? 'radio-checked' : 'radio-unchecked', op.disabled ? 'radio-disabled' : '']} onClick={()=> selectRadioItem(op.val, op.disabled)}>
+      return <View className={['radio-item-container', op.reverse ? 'radio-reverse': '', `radio-${realAlign}`]} onClick={()=> selectRadioItem(op.val, op.disabled)}>
+        <View className={['radio', value === op.val ? 'radio-checked' : 'radio-unchecked', op.disabled ? 'radio-disabled' : '']}>
           {value === op.val && <View className="check-icon"></View>}
         </View>
         <View className="slot">{op.slot}</View>
