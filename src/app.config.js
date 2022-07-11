@@ -3,6 +3,7 @@ export default defineAppConfig({
     'pages/home/index',
     'pages/icon/index',
     'pages/index/index',
+    'pages/about/index',
     // component demo page
     'pages/component-demos/Button/index',
     'pages/component-demos/BigCircleButton/index',
@@ -37,6 +38,12 @@ export default defineAppConfig({
         text: '图标', // tab 上按钮文字
         iconPath: 'assets/app-icons/icon.png',
         selectedIconPath: 'assets/app-icons/icon-active.png',
+      },
+      {
+        pagePath: 'pages/about/index',
+        text: '关于',
+        iconPath: 'assets/app-icons/about.png',
+        selectedIconPath: 'assets/app-icons/about-active.png',
       }
     ],
     color: '#999999', //	tab 上的文字默认颜色，仅支持十六进制颜色

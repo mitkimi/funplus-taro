@@ -112,7 +112,6 @@ export default class HomePage extends React.Component {
         items: [
           {
             icon: require(`../../assets/component-icons/Message.png`),
-            componentName: 'Message',
             name: '信息'
           },
           {
