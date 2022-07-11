@@ -1,0 +1,101 @@
+.input-container {
+  width: 100%;
+  height: 140px;
+  border-radius: 20px;
+  border: 0.5px solid #F3F3F3;
+  background: hsl(0, 0%, 95%);
+  transition: all, 300ms;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .input-core {
+    margin: 0 10px 0 20px;
+    line-height: 24px;
+    color: #393939;
+    font-size: 14px;
+    width: 100%;
+    height: calc(100% - 20px);
+    position: relative;
+    z-index: 0;
+  }
+  .hot-click-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .hot-click-field {
+      color: transparent;
+      margin-right: 1px;
+      z-index: 1;
+    }
+  }
+  .right-side-buttons {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .side-button {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .suffix {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+// 等候输入
+.input-pending {
+  border-color: #F3F3F3;
+  background: #F3F3F3;
+  .input-core {
+    color: #393939;
+  }
+}
+
+// 正在输入
+.input-focus,
+.input-inputed {
+  border-color: #d1d1d1;
+  background: #ffffff;
+  .input-core {
+    color: #393939;
+  }
+}
+
+// success
+.input-success {
+  border-color: #1BBA48;
+  background: #ffffff;
+  .input-core {
+    color: #1BBA48;
+  }
+}
+
+// error
+.input-error {
+  border-color: #C11717;
+  background: #ffffff;
+  .input-core {
+    color: #C11717;
+  }
+}
+
+// disabled
+.input-disabled {}

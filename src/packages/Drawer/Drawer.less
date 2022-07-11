@@ -1,0 +1,74 @@
+@import '../animation/animation.less';
+
+.drawer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  .drawer-cover {
+    width: 100vw;
+    height: 100vh;
+  }
+  .drawer-cover-blur {
+    backdrop-filter: blur(20px);
+  }
+  .drawer-cover-clear {}
+  .drawer-body {
+    background: #ffffff;
+    position: fixed;
+    border-top: 0.5px solid #d1d1d1;
+    .real-body {
+      padding: 10px;
+    }
+  }
+  .drawer-right {
+    height: 100vh;
+    padding: 10px;
+    width: 275px;
+    top: 0;
+    right: 0;
+  }
+  .drawer-left {
+    height: 100vh;
+    padding: 10px;
+    width: 275px;
+    top: 0;
+    left: 0;
+  }
+  .drawer-bottom {
+    height: 300px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.drawer-normal {
+  background: rgba(0, 0, 0, .6);
+}
+
+.drawer-cover-open {
+  animation: fadeInAnimation 300ms 1 linear;
+}
+.drawer-cover-close {
+  animation: fadeOutAnimation 300ms 1 linear;
+}
+.drawer-body-bottom-open {
+  animation: floatInAnimation 300ms 1 linear;
+}
+.drawer-body-bottom-close {
+  animation: floatOutAnimation 300ms 1 linear;
+}
+
+.drawer-body-right-open {
+  animation: floatInRightAnimation 300ms 1 linear;
+}
+.drawer-body-right-close {
+  animation: floatOutRightAnimation 300ms 1 linear;
+}
+.drawer-body-left-open {
+  animation: floatInLeftAnimation 300ms 1 linear;
+}
+.drawer-body-left-close {
+  animation: floatOutLeftAnimation 300ms 1 linear;
+}

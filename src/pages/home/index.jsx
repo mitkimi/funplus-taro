@@ -93,6 +93,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Selector.png`),
+            componentName: 'Select',
             name: '选择器'
           },
           {
@@ -111,6 +112,7 @@ export default class HomePage extends React.Component {
         items: [
           {
             icon: require(`../../assets/component-icons/Message.png`),
+            componentName: 'Message',
             name: '信息'
           },
           {
@@ -125,6 +127,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Drawer.png`),
+            componentName: 'Drawer',
             name: '抽屉'
           }
         ]
