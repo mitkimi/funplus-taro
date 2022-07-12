@@ -1,0 +1,85 @@
+.picker-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  backdrop-filter: blur(20px);
+  z-index: 9;
+  .picker-pad {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 778px;
+    background: #ffffff;
+    z-index: 9;
+    .picker-actions {
+      padding: 20px 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}
+
+.containerFadeIn {
+  display: block;
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+  .picker-pad {
+    animation-name: slideInDown;
+    animation-duration: 500ms;
+  }
+}
+
+.containerFadeOut {
+  animation-name: fadeOut;
+  animation-duration: 700ms;
+  .picker-pad {
+    animation-name: slideOutDown;
+    animation-duration: 700ms;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    bottom: -400px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutDown {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: -400%;
+    opacity: 0;
+  }
+}

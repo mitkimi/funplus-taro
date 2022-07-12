@@ -1,6 +1,7 @@
 import { View } from '@tarojs/components'
 import React from 'react'
 import ComponentIcon from '../../../assets/component-icons/Button.png'
+import '../../../assets/styles/page.less'
 import DemoBlock from '../../../components/DemoBlock'
 import DemoPageTitle from '../../../components/DemoPageTitle'
 import Button from '../../../packages/Button'
@@ -8,7 +9,7 @@ import Button from '../../../packages/Button'
 export default class ButtonDemoPage extends React.Component {
   render() {
     return (
-      <View>
+      <View className="demo-page">
         <DemoPageTitle title="Button" icon={ComponentIcon}>按钮</DemoPageTitle>
         <DemoBlock name="按钮类型" tips="分别展示 5 种按钮类型">
           <View style={{ marginTop: 10 }}><Button type="primary">Primary Button</Button></View>
