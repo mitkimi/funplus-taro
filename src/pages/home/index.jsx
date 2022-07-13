@@ -98,6 +98,7 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/Cascader.png`),
+            componentName: 'Cascader',
             name: '级联选择器'
           },
           {
