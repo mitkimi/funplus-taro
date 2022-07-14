@@ -9,7 +9,6 @@ export default class Index extends React.Component {
 
   handleClick = (ec) => {
     const nextArr = ec.touches
-    console.log(nextArr)
     this.setState({
       touches: [
         ...this.state.touches,
@@ -20,7 +19,6 @@ export default class Index extends React.Component {
 
   componentDidMount() {
     setInterval(() => {
-      console.log(this.state.touches.length)
       this.setState({touches: []})
     }, 5000)
   }

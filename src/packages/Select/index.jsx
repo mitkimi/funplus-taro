@@ -6,6 +6,7 @@ import './Select.less'
 
 const Select = ({
   open,
+  value,
   options,
   onSubmit,
   onClose,
@@ -45,8 +46,20 @@ const Select = ({
   }
   useEffect(() => {
     setDrawerShow(open)
+    
   }, [open])
-
+  
+  // 初始化
+  useEffect(() => {
+    if (value) {
+      options.map((e, i) => {
+        if (e.value === value) {
+          setSelectedIndex(i)
+        }
+      })
+    }
+  }, [])
+  
   return <View>
     <Drawer ref={SelectDrawer} open={drawerShow} placement="bottom" actions={
       <View className="actions">
@@ -55,7 +68,7 @@ const Select = ({
         <View className="title">{ title }</View>
       </View>
     } height={350} closeable onClose={onCoverClose}>
-      <PickerView indicatorStyle="height: 50px;" style="width: 100%; height: 300px;" onChange={handlePickerChange}>
+      <PickerView value={[selectedIndex]} indicatorStyle="height: 50px;" style="width: 100%; height: 300px;" onChange={handlePickerChange}>
         <PickerViewColumn>
           {options && options.map(e => {
             return <View className="picker-item">{ e.label }</View>

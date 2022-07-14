@@ -10,6 +10,7 @@ const Cascader = ({
   onSubmit,
   onChange,
   onClose,
+  value,
   title
 }) => {
   const [drawerShow, setDrawerShow] = useState(open || false)
@@ -63,9 +64,26 @@ const Cascader = ({
   useEffect(() => {
     if (open) {
       setDrawerShow(true)
-      init()
+    }
+    init()
+    if (value) {
+      const nextDefaultValue = []
+      realOptions.map((e, i) => {
+        e.map(element => {
+          if (value[i]) {
+            if (element.value === value[i]) {
+              nextDefaultValue.push(i)
+            }
+          } else {
+            nextDefaultValue.push(0)
+          }
+          
+        })
+      })
+      setSelectedIndex(nextDefaultValue)
     }
   }, [open])
+
 
   const init = () => {
     const firstItem = options[0]
@@ -119,7 +137,7 @@ const Cascader = ({
         <View className="title">{ title }</View>
       </View>
     } height={350} closeable  onClose={onCoverClose}>
-      <PickerView indicatorStyle="height: 50px;" style="width: 100%; height: 300px;" onChange={handlePickerChange}>
+      <PickerView value={selectedIndex} indicatorStyle="height: 50px;" style="width: 100%; height: 300px;" onChange={handlePickerChange}>
         {realOptions && realOptions.map(e => {
           return <PickerViewColumn>
             {

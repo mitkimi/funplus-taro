@@ -66,7 +66,9 @@ export default class SelectDemoPage extends React.Component {
     singleSelectOpen1: false,
     singleSelectValue1: null,
     singleSelectOpen2: false,
-    singleSelectValue2: null
+    singleSelectValue2: null,
+    singleSelectOpen3: false,
+    singleSelectValue3: null
   }
 
   handleSelectSubmit1 = (val) => {
@@ -77,7 +79,7 @@ export default class SelectDemoPage extends React.Component {
   }
 
   render() {
-    const { singleSelectValue1, singleSelectValue2 } = this.state
+    const { singleSelectValue1, singleSelectValue2, singleSelectValue3 } = this.state
     return (
       <View>
         <DemoPageTitle title="Cascader" icon={ComponentIcon}>级联选择器</DemoPageTitle>
@@ -99,6 +101,16 @@ export default class SelectDemoPage extends React.Component {
               <View>{JSON.stringify(singleSelectValue2)}</View>
             </View>}
             <Cascader open={this.state.singleSelectOpen2} value={this.state.singleSelectValue2} options={options2} title="自定义标题 2" onSubmit={this.handleSelectSubmit2} onClose={() => { this.setState({ singleSelectOpen2: false }) }}></Cascader>
+          </View>
+        </DemoBlock>
+        <DemoBlock name="有初始值" tips="适合以上任何一种形式是一哦那个">
+          <View style={{ marginTop: 10 }}>
+            <Button onClick={() => { this.setState({ singleSelectOpen3: true }) }}>打开选择器</Button>
+            {singleSelectValue3 && <View>
+              <View>上次选择的值：</View>
+              <View>{JSON.stringify(singleSelectValue3)}</View>
+            </View>}
+            <Cascader open={this.state.singleSelectOpen3} value={['option_2', 'option_1_3', 'option_1_3_3']} options={options2} title="自定义标题 3" onSubmit={this.handleSelectSubmit2} onClose={() => { this.setState({ singleSelectOpen3: false }) }}></Cascader>
           </View>
         </DemoBlock>
       </View>

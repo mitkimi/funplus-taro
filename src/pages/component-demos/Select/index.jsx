@@ -20,19 +20,24 @@ const options = [
 export default class SelectDemoPage extends React.Component {
   state = {
     singleSelectOpen: false,
-    singleSelectValue: null
+    singleSelectValue: null,
+    singleSelectOpen1: false,
+    singleSelectValue1: null
   }
 
   handleSelectSubmit = (val) => {
     this.setState({ singleSelectValue: val })
   }
+  handleSelect1Submit = (val) => {
+    this.setState({ singleSelectValue1: val })
+  }
 
   render() {
-    const { singleSelectValue } = this.state
+    const { singleSelectValue, singleSelectValue1 } = this.state
     return (
       <View>
         <DemoPageTitle title="Select" icon={ComponentIcon}>选择器</DemoPageTitle>
-        <DemoBlock name="单选" tips="展示一般的引用方法">
+        <DemoBlock name="一般使用" tips="展示一般的引用方法">
           <View style={{ marginTop: 10 }}>
             <Button onClick={() => { this.setState({ singleSelectOpen: true }) }}>打开选择器</Button>
             {singleSelectValue && <View>
@@ -40,6 +45,16 @@ export default class SelectDemoPage extends React.Component {
               <View>Label 为：{ options.map(e => { return e.value === singleSelectValue ? e.label : ''})}</View>
             </View>}
             <Select open={this.state.singleSelectOpen} value={this.state.singleSelectValue} options={options} title="自定义标题" onSubmit={this.handleSelectSubmit} onClose={() => { this.setState({ singleSelectOpen: false }) }}></Select>
+          </View>
+        </DemoBlock>
+        <DemoBlock name="设置初始值" tips="展示一般的引用方法">
+          <View style={{ marginTop: 10 }}>
+            <Button onClick={() => { this.setState({ singleSelectOpen1: true }) }}>打开选择器</Button>
+            {singleSelectValue1 && <View>
+              <View>上次选择的值：{singleSelectValue1}</View>
+              <View>Label 为：{ options.map(e => { return e.value === singleSelectValue1 ? e.label : ''})}</View>
+            </View>}
+            <Select open={this.state.singleSelectOpen1} value={'option_2'} options={options} title="有初始值" onSubmit={this.handleSelectSubmit} onClose={() => { this.setState({ singleSelectOpen1: false }) }}></Select>
           </View>
         </DemoBlock>
       </View>
