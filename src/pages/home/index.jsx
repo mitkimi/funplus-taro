@@ -43,14 +43,17 @@ export default class HomePage extends React.Component {
         items: [
           {
             icon: require(`../../assets/component-icons/BreadCrumb.png`),
+            componentName: 'BreadCrumb',
             name: '面包屑'
           },
           {
             icon: require(`../../assets/component-icons/Stepper.png`),
+            componentName: 'Stepper',
             name: '步骤条'
           },
           {
             icon: require(`../../assets/component-icons/ToTop.png`),
+            componentName: 'ToTop',
             name: '回到顶部'
           }
         ]
@@ -60,6 +63,7 @@ export default class HomePage extends React.Component {
         items: [
           {
             icon: require(`../../assets/component-icons/Form.png`),
+            componentName: 'Form',
             name: '表单'
           },
           {
@@ -74,7 +78,8 @@ export default class HomePage extends React.Component {
           },
           {
             icon: require(`../../assets/component-icons/NumberInput.png`),
-            name: '数字输入器'
+            componentName: 'NumberInput',
+            name: '数字输入框'
           },
           {
             icon: require(`../../assets/component-icons/CaptchaInput.png`),
@@ -113,6 +118,7 @@ export default class HomePage extends React.Component {
         items: [
           {
             icon: require(`../../assets/component-icons/Message.png`),
+            componentName: 'Message',
             name: '信息'
           },
           {

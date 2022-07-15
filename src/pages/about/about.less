@@ -22,6 +22,41 @@
   margin-top: 5px;
 }
 
+.tab-box-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  .tab-box-item {
+    width: calc((100% - 20px)/3);
+    height: 100px;
+    border-radius: 8px;
+    margin: 5px 0;
+    background: #f1f1f1;
+    position: relative;
+    .tab-box-value {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 500;
+      color: #666666;
+    }
+    .tab-box-label {
+      position: absolute;
+      // width: 100%;
+      font-size: 12px;
+      font-weight: 300;
+      color: #1B80DD;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .developer-list {
   display: flex;
   flex-direction: row;
@@ -41,11 +76,18 @@
       height: 60px;
       // background: #333333;
       border-radius: 50%;
-      overflow: hidden;
       box-shadow: 0 0 14px 2px rgba(0, 0, 0, .18);
+      position: relative;
       .real-avatar {
+        border-radius: 50%;
+        overflow: hidden;
         width: 100%;
         height: 100%;
+      }
+      .bubble {
+        position: absolute;
+        top: 0;
+        right: 0;
       }
     }
     .name {
@@ -60,4 +102,66 @@
       text-align: center;
     }
   }
+}
+
+.dialog-header-container {
+  width: calc(100% + 30px);
+  height: 40px;
+  background: #1B80DD;
+  color: #ffffff;
+  margin-top: -15px;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-pic {
+  width: 100%;
+  height: 200px;
+  background-color: #f3f3f3;
+  background-image: url(./images/loading.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}
+.dialog-name {
+  margin-top: 20px;
+  color: #1B80DD;
+  font-size: 18px;
+}
+.related-info {
+  font-size: 12px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 15px;
+  .wechat {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    .real-avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      margin-right: 10px;
+      box-shadow: 0 0 4px 2px rgba(0, 0, 0, .18);
+    }
+    .real-wechat-name {
+      font-weight: 500;
+      color: #666666;
+    }
+  }
+}
+.dialog-intro {
+  margin-top: 15px;
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
 }

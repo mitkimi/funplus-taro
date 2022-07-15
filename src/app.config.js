@@ -17,6 +17,7 @@ export default defineAppConfig({
     'pages/component-demos/CheckBox/index',
     'pages/component-demos/Cascader/index',
     'pages/component-demos/Input/index',
+    'pages/component-demos/NumberInput/index',
     'pages/component-demos/TextArea/index',
     'pages/component-demos/Toast/index'
   ],

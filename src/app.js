@@ -1,9 +1,12 @@
+import { showShareMenu } from '@tarojs/taro'
 import { Component } from 'react'
 import './app.less'
 
 class App extends Component {
 
-  componentDidMount () {}
+  componentDidMount() {
+    showShareMenu({})
+  }
 
   componentDidShow () {}
 
