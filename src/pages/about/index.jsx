@@ -55,6 +55,8 @@ export default class AboutPage extends React.Component {
         <DemoBlock name="Intro">
           <View className="paragrams">FunPlus UI 是一套具有统一设计风格、活泼且不躁动的前端组件库。</View>
           <View className="paragrams">在设计时，FunPlus 参考了 arco design、ant design 等的设计价值观和 Element UI 的设计原则。遵循自然、仪式感和做减法的原则。</View>
+        </DemoBlock>
+        <DemoBlock name="开发信息">
           <View className="tab-box-list">
             <View className="tab-box-item">
               <View className="tab-box-value" style={{ fontSize: 28 }}>Taro.js</View>
@@ -67,6 +69,58 @@ export default class AboutPage extends React.Component {
             <View className="tab-box-item">
               <View className="tab-box-value" style={{ fontSize: 20 }}>JavaScript</View>
               <View className="tab-box-label">语 言</View>
+            </View>
+          </View>
+        </DemoBlock>
+        <DemoBlock name="各端支持情况">
+          <View className="tab-box-list">
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#1BBA48' }}>支持</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>飞书小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#1BBA48' }}>支持</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>字节跳动小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#999999' }}>未测试</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>钉钉小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#1BBA48' }}>支持</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>支付宝小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#999999' }}>未测试</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>支付宝 IOT 小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#999999' }}>未测试</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>京东小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#1BBA48' }}>支持</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>React Native</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#999999' }}>未测试</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>百度小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#1BBA48' }}>支持</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>微信小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#1BBA48' }}>支持</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>企业微信小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#999999' }}>未测试</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>QQ 小程序</View>
+            </View>
+            <View className="tab-box-item">
+              <View className="tab-box-value" style={{ fontSize: 28, color: '#999999' }}>未测试</View>
+              <View className="tab-box-label" style={{ color: '#999999' }}>H5</View>
             </View>
           </View>
         </DemoBlock>

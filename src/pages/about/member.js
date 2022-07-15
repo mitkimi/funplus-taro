@@ -27,8 +27,8 @@ const THT = new MEMBER({
 })
 
 const XIN = new MEMBER({
-  name: '万鑫',
-  nickName: '鑫仔',
+  name: '万 鑫',
+  nickName: '鑫 仔',
   job: '交互设计与研发',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/xinzai.avatar.JPG',
   pic: 'http://cdn.illiaccess.com/images/funplus-ui/xin.pic.jpeg',
@@ -73,7 +73,7 @@ const THOMAS = new MEMBER({
 })
 
 const YUNLOO = new MEMBER({
-  name: '沈一鸣',
+  name: '🤫 YUNLOO',
   nickName: 'yunloo',
   job: '策划/营销',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/yunloo.avatar.JPG',
@@ -84,7 +84,7 @@ const YUNLOO = new MEMBER({
 })
 
 const TOVI = new MEMBER({
-  name: '刘童',
+  name: '刘 童',
   nickName: 'Tovi-Liu',
   job: '视觉',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/tong.avatar.JPG',
@@ -98,7 +98,7 @@ const TOVI = new MEMBER({
 })
 
 const RITIAN = new MEMBER({
-  name: '吴昊',
+  name: '吴 昊',
   nickName: '日天君',
   job: '用户体验/文案',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/ritianjun.avatar.JPG',
