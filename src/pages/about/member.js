@@ -27,8 +27,8 @@ const THT = new MEMBER({
 })
 
 const XIN = new MEMBER({
-  name: '万 鑫',
-  nickName: '鑫 仔',
+  name: '万鑫',
+  nickName: '鑫仔',
   job: '交互设计与研发',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/xinzai.avatar.JPG',
   pic: 'http://cdn.illiaccess.com/images/funplus-ui/xin.pic.jpeg',
@@ -84,7 +84,7 @@ const YUNLOO = new MEMBER({
 })
 
 const TOVI = new MEMBER({
-  name: '刘 童',
+  name: '刘童',
   nickName: '刘童',
   job: '视觉',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/tong.avatar.JPG',
