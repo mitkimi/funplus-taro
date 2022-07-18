@@ -11,16 +11,16 @@ export default class HomePage extends React.Component {
       {
         groupName: '基础组件 Basic',
         items: [
-          {
-            icon: require(`../../assets/component-icons/Layout.png`),
-            componentName: 'Layout',
-            name: '布局'
-          },
-          {
-            icon: require(`../../assets/component-icons/Container.png`),
-            componentName: 'Container',
-            name: '栅格'
-          },
+          // {
+          //   icon: require(`../../assets/component-icons/Layout.png`),
+          //   componentName: 'Layout',
+          //   name: '布局'
+          // },
+          // {
+          //   icon: require(`../../assets/component-icons/Container.png`),
+          //   componentName: 'Container',
+          //   name: '栅格'
+          // },
           {
             icon: require(`../../assets/component-icons/Cell.png`),
             componentName: 'Cell',
@@ -38,26 +38,26 @@ export default class HomePage extends React.Component {
           }
         ]
       },
-      {
-        groupName: '导航 Navigator',
-        items: [
-          {
-            icon: require(`../../assets/component-icons/BreadCrumb.png`),
-            componentName: 'BreadCrumb',
-            name: '面包屑'
-          },
-          {
-            icon: require(`../../assets/component-icons/Stepper.png`),
-            componentName: 'Stepper',
-            name: '步骤条'
-          },
-          {
-            icon: require(`../../assets/component-icons/ToTop.png`),
-            componentName: 'ToTop',
-            name: '回到顶部'
-          }
-        ]
-      },
+      // {
+      //   groupName: '导航 Navigator',
+      //   items: [
+      //     {
+      //       icon: require(`../../assets/component-icons/BreadCrumb.png`),
+      //       componentName: 'BreadCrumb',
+      //       name: '面包屑'
+      //     },
+      //     {
+      //       icon: require(`../../assets/component-icons/Stepper.png`),
+      //       componentName: 'Stepper',
+      //       name: '步骤条'
+      //     },
+      //     {
+      //       icon: require(`../../assets/component-icons/ToTop.png`),
+      //       componentName: 'ToTop',
+      //       name: '回到顶部'
+      //     }
+      //   ]
+      // },
       {
         groupName: '表单 Form',
         items: [
@@ -116,11 +116,11 @@ export default class HomePage extends React.Component {
       {
         groupName: '反馈 Feedback',
         items: [
-          {
-            icon: require(`../../assets/component-icons/Message.png`),
-            componentName: 'Message',
-            name: '信息'
-          },
+          // {
+          //   icon: require(`../../assets/component-icons/Message.png`),
+          //   componentName: 'Message',
+          //   name: '信息'
+          // },
           {
             icon: require(`../../assets/component-icons/Toast.png`),
             componentName: 'Toast',

@@ -73,7 +73,7 @@ const THOMAS = new MEMBER({
 })
 
 const YUNLOO = new MEMBER({
-  name: '🤫 YUNLOO',
+  name: 'YUNLOO',
   nickName: 'yunloo',
   job: '策划/营销',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/yunloo.avatar.JPG',
@@ -85,7 +85,7 @@ const YUNLOO = new MEMBER({
 
 const TOVI = new MEMBER({
   name: '刘 童',
-  nickName: 'Tovi-Liu',
+  nickName: '刘童',
   job: '视觉',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/tong.avatar.JPG',
   pic: 'http://cdn.illiaccess.com/images/funplus-ui/tovi.pic.jpeg',
@@ -98,7 +98,7 @@ const TOVI = new MEMBER({
 })
 
 const RITIAN = new MEMBER({
-  name: '吴 昊',
+  name: 'ARI',
   nickName: '日天君',
   job: '用户体验/文案',
   avatar: 'http://cdn.illiaccess.com/images/funplus-ui/ritianjun.avatar.JPG',
