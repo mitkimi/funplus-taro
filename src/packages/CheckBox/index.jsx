@@ -8,8 +8,8 @@ const CheckBox = ({ value, children, onChange, disabled, align, reverse }) => {
     const nextValue = !val
     onChange && !disabled && onChange(nextValue)
   }
-  return <View className={['checkbox-container', reverse ? 'checkbox-reverse' : '']}>
-    <View className={['checkbox', `checkbox-${realAlign}`, value ? 'checkbox-checked' : 'checkbox-unchecked', disabled ? 'checkbox-disabled' : '']} onClick={() => checkboxChange(value)}>
+  return <View className={`checkbox-container ${reverse ? 'checkbox-reverse' : ''}`}>
+    <View className={`checkbox checkbox-${realAlign}  ${value ? 'checkbox-checked' : 'checkbox-unchecked'} ${disabled ? 'checkbox-disabled' : ''}`} onClick={() => checkboxChange(value)}>
       {value && <Image className="check-icon" src={CheckIcon} />}
     </View>
     <View className="slot">{ children }</View>

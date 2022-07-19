@@ -13,7 +13,8 @@ const InputComponent = ({
     disabled,
     type,
     clearable,
-    suffix,
+  suffix,
+    style,
     value
   }) => {
 
@@ -23,8 +24,11 @@ const InputComponent = ({
     onInput({ detail: { value: val } })
     setInputState('inputed')
   }
+  const ComponentStyle = {
+    ...style
+  }
   return (
-    <View className={['input-container', `input-${inputState}`, `input-${status}`]}>
+    <View className={`input-container input-${inputState} input-${status}`} style={ComponentStyle}>
       <Input
         className="input-core"
         type={inputType}

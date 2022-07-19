@@ -43,7 +43,7 @@ const Dialog = ({
           )}
         </View>
         {closeable && <View className="close-btn" onClick={onClose}>
-          <Image src={CloseIcon} />
+          <Image className="close-btn-core" src={CloseIcon} />
         </View>}
       </View>
     </View>
