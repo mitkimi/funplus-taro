@@ -14,6 +14,7 @@ export default class Index extends React.Component {
 
   handleClick = (ec) => {
     const nextArr = ec.touches
+    console.log('--->', ec.touches)
     this.setState({
       touches: [
         ...this.state.touches,
